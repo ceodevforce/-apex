@@ -4,7 +4,6 @@ import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
 import logoPNG from "/assets/logo.png";
-import logoSVG from "/assets/logo.svg";
 
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search";
@@ -21,7 +20,7 @@ const { activeNav } = Astro.props;
         {
           LOGO_IMAGE.enable ? (
             <img
-              src={LOGO_IMAGE.svg ? logoPNG : logoSVG}
+              src={LOGO_IMAGE.svg ? logoPNG : "Bennett"}
               alt="Vantol CeoDevForce Bennett"
               width={LOGO_IMAGE.width}
               height={LOGO_IMAGE.height}
